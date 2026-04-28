@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import dongzhiBgImg from './assets/dongzhi-bg.png';
 
 export const Dongzhi = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -153,7 +154,7 @@ export const Dongzhi = () => {
       <div className="cube-container z-10 flex items-center justify-center">
         <svg ref={svgRef} viewBox="0 0 600 600" className="w-[600px] h-[600px] bg-white filter drop-shadow-xl pointer-events-auto">
           {/* Background image placeholder */}
-          <image href="/dongzhi-bg.png" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid slice" />
+          <image href={dongzhiBgImg} x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid slice" />
           
           {/* Dynamic Dots Group */}
           <g id="dongzhi-dots-group"></g>

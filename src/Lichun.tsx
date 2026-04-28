@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import branchesImg from './assets/branches.png';
+import iceImg from './assets/ice.png';
+import blossomsImg from './assets/blossoms.png';
 
 const COLORS = {
   black: "#1A1A1A", iceBlue: "#7AC2DB", pink: "#FFA8CE", magenta: "#D9427A", green: "#6FB056"
@@ -188,9 +191,9 @@ export const Lichun = () => {
           </defs>
 
           {/* User provided images. These need to be uploaded to the public directory. */}
-          <image href="/branches.png" width="600" height="600" />
-          <image href="/ice.png" width="600" height="600" mask="url(#iceMask)" className="transition-opacity duration-1000" />
-          <image href="/blossoms.png" width="600" height="600" mask="url(#blossomMask)" className="transition-opacity duration-1000" />
+          <image href={branchesImg} width="600" height="600" />
+          <image href={iceImg} width="600" height="600" mask="url(#iceMask)" className="transition-opacity duration-1000" />
+          <image href={blossomsImg} width="600" height="600" mask="url(#blossomMask)" className="transition-opacity duration-1000" />
         </svg>
       </div>
     </div>
